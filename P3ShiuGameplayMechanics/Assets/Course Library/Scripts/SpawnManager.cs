@@ -4,13 +4,13 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject enemyPrefab;
-    private float spawnRange = 9;
+    private float spawnRange = 9.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
-        Instantiate(enemyPrefab, GenerateSpawnPosition()
-     ,enemyPrefab.transform.rotation);       }
+        Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation); }
+
 
         private Vector3 GenerateSpawnPosition() { 
 
